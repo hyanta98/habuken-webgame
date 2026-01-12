@@ -1,0 +1,25 @@
+[_tb_system_call storage=system/_opning.ks]
+
+[cm  ]
+*opning
+
+[bg  storage="ハブ拳/back-beju.png"  time="1000"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="ハブ拳/opning.mp3"  ]
+[tb_image_show  time="2000"  storage="/default/ハブ拳/opning.png"  ]
+[wait  time="2000"  ]
+[chara_show  name="master"  time="1000"  wait="true"  storage="chara/1/master00.png"  width="640"  height="960"  left="-2"  top="233"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=2 ]
+よくぞここへ来たの～[l][r]
+厳しい鍛錬になるじゃろうが・・・[l][r]
+己の技を磨き・・・[l][r]
+ハブ拳の真髄を極めよ！！[l][r]
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[chara_hide  name="master"  time="1000"  wait="true"  pos_mode="true"  ]
+[wait  time="1000"  ]
+[tb_image_hide  time="0"  ]
+[tb_image_show  time="0"  storage="default/ハブ拳/rule.png"  width="640"  height="960"  ]
+[glink  color="black"  storage="scene1.ks"  size="30"  text="ハブ拳始め！！"  x="155"  y="445"  ]
+[s  ]
